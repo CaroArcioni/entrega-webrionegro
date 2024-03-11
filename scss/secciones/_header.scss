@@ -1,0 +1,25 @@
+.header {
+    nav {
+        ul {
+            li {
+                &:hover {
+                    background-color: $naranja-suave;
+                    transition: all .3s;
+                }
+
+                a {
+                    font-size: 20px;
+                    color: $gris-azulado;
+                    text-decoration: none;
+                    padding: 0 20px;
+
+                    &:hover {
+                        color: $blanco;
+                        transition: all .3s;
+                    }
+
+                }
+            }
+        }
+    }
+}

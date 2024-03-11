@@ -1,0 +1,13 @@
+// las variables van siempre al comienzo
+
+// utilidades
+@import "./recursos/variables";
+@import "./recursos/reseteo";
+
+// secciones
+@import "./secciones/header";
+@import "./secciones/main-index";
+@import"./secciones/main-conoce";
+@import"./secciones/main-imperdibles";
+@import"./secciones/main-informacion";
+@import"./secciones/main-que-hacer";

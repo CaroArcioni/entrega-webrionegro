@@ -1,0 +1,13 @@
+// reseteo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+    color: $gris-azulado;
+}
+
+.ancho-maximo {
+    max-width: 1900px;
+    margin: auto;
+}
