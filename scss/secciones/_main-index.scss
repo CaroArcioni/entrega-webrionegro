@@ -1,4 +1,6 @@
 .main-index {
+    min-height: 80vh;
+
     div {
         img {
             width: 100%;
@@ -7,7 +9,7 @@
 
     ul {
         background-color: $naranja;
-        height: 100px;
+        height: 80px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -30,7 +32,7 @@
 
         img {
             width: 305px;
-            padding: 5px;
+            padding: 10px;
         }
 
         a {
