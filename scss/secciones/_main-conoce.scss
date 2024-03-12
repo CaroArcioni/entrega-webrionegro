@@ -5,27 +5,11 @@
         }
     }
 
-    .h1 {
-        background-color: $naranja;
-        height: 70px;
-        width: 100%;
-        font-size: 20px;
-        color: $blanco;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
+    h1 {
+        @include titulo-destacado;
     }
 
-    h2 {
-        font-size: 22px;
-        color: $naranja;
-        margin: 10px 50px;
-    }
-
-    p {
-        font-size: 20px;
-        color: #323E48;
-        margin: 10px 50px;
+    section {
+        @extend .parrafo
     }
 }

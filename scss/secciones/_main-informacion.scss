@@ -1,23 +1,25 @@
-.maps {
-    display: flex;
-    justify-content: center;
-}
-
 .main-informacion {
-    margin: 50px;
-}
+    .maps {
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
 
-.main-informacion h1 {
-    font-size: 28px;
-    color: #323E48;
-}
+    h1 {
+        font-size: $h1;
+        color: $gris-azulado;
+        margin: 10px 50px;
+    }
 
-.main-informacion h2 {
-    font-size: 24px;
-    color: #323E48;
-}
+    h2 {
+        font-size: $h2;
+        color: $gris-azulado;
+        margin: 10px 50px;
+    }
 
-.main-informacion p {
-    font-size: 18px;
-    color: #3b454e;
+    p {
+        font-size: $parrafo;
+        color: $gris-azulado;
+        margin: 10px 50px;
+    }
 }

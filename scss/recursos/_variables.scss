@@ -8,3 +8,37 @@ $gris-azulado: #323E48;
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 $fuente: "Raleway";
+
+// tamaño fuentes
+$h1: 30px;
+$h2: 24px;
+$h3: 21px;
+$parrafo: 20px;
+
+// iconos
+.fa-whatsapp {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.fa-cloud-showers-heavy {
+    color: #4a5e6d;
+    padding: 0 5px;
+}
+
+.fa-twitter {
+    color: #4a5e6d;
+    padding: 0 5px;
+}
+
+.fa-facebook {
+    color: #4a5e6d;
+    padding: 0 5px;
+}
+
+.fa-instagram{
+    color: #4a5e6d;
+    padding: 0 5px;
+}

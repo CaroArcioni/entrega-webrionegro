@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.fa-whatsapp {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0 5px; }
+
+.fa-cloud-showers-heavy {
+  color: #4a5e6d;
+  padding: 0 5px; }
+
+.fa-twitter {
+  color: #4a5e6d;
+  padding: 0 5px; }
+
+.fa-facebook {
+  color: #4a5e6d;
+  padding: 0 5px; }
+
+.fa-instagram {
+  color: #4a5e6d;
+  padding: 0 5px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +31,20 @@
 .ancho-maximo {
   max-width: 1900px;
   margin: auto; }
+
+.parrafo, .main-conoce section, .main-imperdibles section {
+  background-color: white;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto; }
+  .parrafo h2, .main-conoce section h2, .main-imperdibles section h2 {
+    font-size: 24px;
+    color: #F5A800; }
+  .parrafo p, .main-conoce section p, .main-imperdibles section p {
+    font-size: 20px;
+    color: #323E48; }
 
 .header nav ul li:hover {
   background-color: #f4b93a;
@@ -35,7 +71,7 @@
   align-items: center;
   list-style: none; }
   .main-index ul a {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
     padding: 50px; }
@@ -45,14 +81,16 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px; }
-  .main-index section article img {
+  .main-index section img {
     width: 305px;
     padding: 5px; }
-  .main-index section article h2 {
-    font-size: 20px;
-    color: #323E48;
+  .main-index section a {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    text-decoration: none; }
+    .main-index section a h2 {
+      font-size: 24px;
+      color: #323E48; }
 
 @media (max-width: 780px) {
   .main-index ul {
@@ -61,96 +99,81 @@
     height: 180px;
     padding: 10px 0 0 0; }
     .main-index ul li {
-      height: 50px; } }
+      height: 50px; }
+      .main-index ul li a {
+        font-size: 24px; } }
 
 .main-conoce div img {
   width: 100%; }
 
-.main-conoce .h1 {
+.main-conoce h1 {
   background-color: #F5A800;
-  height: 70px;
+  height: 80px;
   width: 100%;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none; }
-
-.main-conoce h2 {
-  font-size: 22px;
-  color: #F5A800;
-  margin: 10px 50px; }
-
-.main-conoce p {
-  font-size: 20px;
-  color: #323E48;
-  margin: 10px 50px; }
 
 .main-imperdibles div img {
   width: 100%; }
 
-.main-imperdibles .h1 {
+.main-imperdibles h1 {
   background-color: #F5A800;
-  height: 70px;
+  height: 80px;
   width: 100%;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none; }
-
-.main-imperdibles h2 {
-  font-size: 22px;
-  color: #F5A800;
-  margin: 10px 50px; }
-
-.main-imperdibles p {
-  font-size: 20px;
-  color: #323E48;
-  margin: 10px 50px; }
 
 .main-imperdibles .maps {
   display: flex;
   justify-content: center;
-  margin: 10px 50px; }
+  margin: 40px; }
 
-.maps {
+.main-informacion .maps {
   display: flex;
-  justify-content: center; }
-
-.main-informacion {
-  margin: 50px; }
+  justify-content: center;
+  margin: 40px; }
 
 .main-informacion h1 {
-  font-size: 28px;
-  color: #323E48; }
+  font-size: 30px;
+  color: #323E48;
+  margin: 10px 50px; }
 
 .main-informacion h2 {
   font-size: 24px;
-  color: #323E48; }
+  color: #323E48;
+  margin: 10px 50px; }
 
 .main-informacion p {
-  font-size: 18px;
-  color: #3b454e; }
-
-.h1 {
-  background-color: #F5A800;
-  height: 70px;
-  width: 100%;
   font-size: 20px;
+  color: #323E48;
+  margin: 10px 50px; }
+
+.main-quehacer div img {
+  width: 100%; }
+
+.main-quehacer h1 {
+  background-color: #F5A800;
+  height: 80px;
+  width: 100%;
+  font-size: 30px;
   color: white;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none; }
 
-.fotos-quehacer article {
-  margin: 10px;
-  padding: 10px; }
-
-.fotos-quehacer {
+.main-quehacer .fotos {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,56 +183,57 @@
   max-width: 1800px;
   margin: auto;
   padding: 25px 0 25px 0; }
-
-.imagen-1 {
-  grid-area: imagen-1;
-  background-image: url("../recursos/comida-cordillera.jpg");
-  background-size: cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.imagen-2 {
-  grid-area: imagen-2;
-  background-image: url("../recursos/comida-estepa.jpg");
-  background-size: cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.imagen-3 {
-  grid-area: imagen-3;
-  background-image: url("../recursos/comida-valle.jpg");
-  background-size: cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.imagen-4 {
-  grid-area: imagen-4;
-  background-image: url("../recursos/comida-costa.jpg");
-  background-size: cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.fotos-quehacer h2 {
-  font-size: 40px; }
+  .main-quehacer .fotos article {
+    margin: 10px;
+    padding: 10px; }
+  .main-quehacer .fotos .imagen-1 {
+    grid-area: imagen-1;
+    background-image: url("../recursos/comida-cordillera.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-quehacer .fotos .imagen-2 {
+    grid-area: imagen-2;
+    background-image: url("../recursos/comida-estepa.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-quehacer .fotos .imagen-3 {
+    grid-area: imagen-3;
+    background-image: url("../recursos/comida-valle.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-quehacer .fotos .imagen-4 {
+    grid-area: imagen-4;
+    background-image: url("../recursos/comida-costa.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-quehacer .fotos h2 {
+    font-size: 40px; }
 
 @media (max-width: 900px) {
-  .fotos-quehacer {
+  .main-quehacer .fotos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 400px);
     grid-template-areas: "imagen-1" "imagen-2" "imagen-3" "imagen-4"; } }
 
 @media (max-width: 550px) {
-  .fotos-quehacer {
+  .main-quehacer .fotos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: "imagen-1" "imagen-2" "imagen-3" "imagen-4"; } }
+
+.footer {
+  display: flex; }

@@ -1,0 +1,106 @@
+.main-quehacer {
+    div {
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        @include titulo-destacado;
+    }
+
+    .fotos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: repeat(2, 500px);
+        grid-template-areas:
+            "imagen-1 imagen-2"
+            "imagen-3 imagen-4";
+        max-width: 1800px;
+        margin: auto;
+        padding: 25px 0 25px 0;
+
+        article {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .imagen-1 {
+            grid-area: imagen-1;
+            background-image: url('../recursos/comida-cordillera.jpg');
+            background-size: cover;
+            color: $blanco;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagen-2 {
+            grid-area: imagen-2;
+            background-image: url('../recursos/comida-estepa.jpg');
+            background-size: cover;
+            color: $blanco;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagen-3 {
+            grid-area: imagen-3;
+            background-image: url('../recursos/comida-valle.jpg');
+            background-size: cover;
+            color: $blanco;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagen-4 {
+            grid-area: imagen-4;
+            background-image: url('../recursos/comida-costa.jpg');
+            background-size: cover;
+            color: $blanco;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+    }
+
+}
+
+@media(max-width: 900px) {
+    .main-quehacer {
+        .fotos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 400px);
+            grid-template-areas:
+                "imagen-1"
+                "imagen-2"
+                "imagen-3"
+                "imagen-4";
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .main-quehacer {
+        .fotos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 200px);
+            grid-template-areas:
+                "imagen-1"
+                "imagen-2"
+                "imagen-3"
+                "imagen-4";
+        }
+    }
+}
