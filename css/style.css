@@ -235,5 +235,5 @@
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: "imagen-1" "imagen-2" "imagen-3" "imagen-4"; } }
 
-.footer {
+.footer ul li {
   display: flex; }
