@@ -15,31 +15,24 @@ $h1: 30px;
 $h2: 24px;
 $h3: 21px;
 $parrafo: 20px;
+$texto-footer: 16px;
 
 // iconos
+.fa-circle-info {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
 .fa-whatsapp {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0 10px 0 10px;
 }
 
 .fa-cloud-showers-heavy {
-    color: #4a5e6d;
+    color: $gris-azulado;
     padding: 0 5px;
-}
-
-.fa-twitter {
-    color: $gris-azulado;
-    padding: 0 10px;
-}
-
-.fa-facebook {
-    color: $gris-azulado;
-    padding: 0 10px;
-}
-
-.fa-instagram{
-    color: $gris-azulado;
-    padding: 0 10px;
 }
